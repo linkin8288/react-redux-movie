@@ -1,3 +1,7 @@
+// Because the component is wrapped with React.memo, it will be memoized and re-rendered only when its props 
+// (data, title) change. This can help improve performance by avoiding unnecessary 
+// re-renders of the card component when its data hasn't changed.
+
 import React, { useRef, useState } from "react";
 import styled from "styled-components";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
